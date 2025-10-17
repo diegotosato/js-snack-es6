@@ -69,35 +69,35 @@ const bycicles = [
     },
     {
         name: 'Cannondale',
-        peso: 42
+        peso: 40
     }
 ]
 
 console.log(bycicles);
-// creato un array di oggetti, ognuno con chiavi nome e peso e rispettivi valori
+// // creato un array di oggetti, ognuno con chiavi nome e peso e rispettivi valori
 
 
 
 
-// -creo un array di supporto dove pusho il valore delle chiavi peso
-const byciclesWeights = []
+// // -creo un array di supporto dove pusho il valore delle chiavi peso
+// const byciclesWeights = []
 
-/*
-- ciclo for
-    - scorro nell'array degli oggetti
-        - i = 0, i < array oggetti.lenght, i++
-        - const bici_weight = array oggetti [i].peso
-        */
-for (let i = 0; i < bycicles.length; i++) {
-    const bycicleWeight = bycicles[i].peso;
-    console.log(bycicleWeight);
+// /*
+// - ciclo for
+//     - scorro nell'array degli oggetti
+//         - i = 0, i < array oggetti.lenght, i++
+//         - const bici_weight = array oggetti [i].peso
+//         */
+// for (let i = 0; i < bycicles.length; i++) {
+//     const bycicleWeight = bycicles[i].peso;
+//     console.log(bycicleWeight);
 
-    //- pusho nel array di supporto i pesi
-    byciclesWeights.push(bycicleWeight)
-}
+//     //- pusho nel array di supporto i pesi
+//     byciclesWeights.push(bycicleWeight)
+// }
 
-console.log(byciclesWeights);
-//scorro dentro al array degli oggetti e pusho nel array dei pesi ogni chiave peso
+// console.log(byciclesWeights);
+// //scorro dentro al array degli oggetti e pusho nel array dei pesi ogni chiave peso
 
 
 /*
@@ -111,20 +111,44 @@ console.log(byciclesWeights);
 
 - log di minimo
 */
-let weight = byciclesWeights[0];
+// let weight = byciclesWeights[0];
 
-for (let i = 1; i < byciclesWeights.length; i++) {
-    if (byciclesWeights[i] < weight) {
-        weight = byciclesWeights[i]
-    }
-    
-    if (weight === bycicles[i].peso) {
-        console.log(weight);
-        console.log(bycicles[i]);
-    }
-}
+// for (let i = 1; i < byciclesWeights.length; i++) {
+//     if (byciclesWeights[i] < weight) {
+//         weight = byciclesWeights[i]
+//     }
+
+//     if (weight === bycicles[i].peso) {
+//         console.log(weight);
+//         console.log(bycicles[i]);
+//     }
+// }
 
 //creo una variabile di appoggio e dico che è uguale all'indice zero dell'array dei pesi
 //scorro dentro l'array dei pesi partendo dall'indice uno
 //confronto se i1 è minore di i0, allora la mia variabile di appoggio diventa i1, finchè non mi rimane l'indice con il numero più piccolo
 //se il peso minore è uguale al valore della chiave di un oggetto, allora stampo sia il peso che l'oggetto
+
+
+
+let weight = bycicles[0].peso
+
+for (let i = 0; i < bycicles.length; i++) {
+
+
+
+    const lighter = bycicles[i].peso;
+
+    if (lighter < weight) {
+        weight = lighter
+        console.log(weight);
+
+        if (weight === bycicles[i].peso) {
+            console.log(bycicles[i]);
+        }
+    }
+
+
+
+}
+
