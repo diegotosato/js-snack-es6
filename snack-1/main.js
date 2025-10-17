@@ -100,3 +100,26 @@ console.log(byciclesWeights);
 //scorro dentro al array degli oggetti e pusho nel array dei pesi ogni chiave peso
 
 
+/*
+- ciclo for
+    - scorro nell'array di supporto
+        - i = 1, i < array supporto.lenght, i++
+        let minimo = array supporto [0]
+            - IF/ELSE
+                - array supporto [i] > minimo
+                - minimo = array supporto [i]
+
+- log di minimo
+*/
+let weight = byciclesWeights[0];
+
+for (let i = 1; i < byciclesWeights.length; i++) {
+    if (byciclesWeights[i] < weight) {
+        weight = byciclesWeights[i]
+    }
+    
+    if (weight === bycicles[i].peso) {
+        console.log(weight);
+        console.log(bycicles[i]);
+    }
+}
