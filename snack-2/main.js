@@ -27,6 +27,10 @@ PSEUDO-CODE
     - questa variabile è un oggetto
         - il cui name = name originale
         - il cui valore di falli subiti = nuovo valore random
+
+- creo un nuovo array finale per i team aggiornati
+    - nel loop precedente pusho la nuova variabile in questo array
+        - variabile = oggetto con solo le chiavi desiderate
 */
 
 
@@ -65,6 +69,9 @@ console.log(teams);
 
 
 
+const updatedTeams = []
+
+
 for (let i = 0; i < teams.length; i++) {
     teams[i].points = Math.floor(Math.random() * 100)
     teams[i].fouls_suffered = Math.floor(Math.random() * 100)
@@ -73,4 +80,8 @@ for (let i = 0; i < teams.length; i++) {
         name: teams[i].name,
         fouls_suffered: teams[i].fouls_suffered
     }
+
+    updatedTeams.push(teamDataUpdate)
 }
+
+console.log(updatedTeams);
