@@ -23,3 +23,37 @@ PSEUDO-CODE
 
 - loggo primo array e vedo se cambiano i numeri
 */
+
+
+
+
+
+const teams = [
+    {
+        name: 'Milan',
+        points: 0,
+        fouls_suffered: 0
+    },
+    {
+        name: 'Inter',
+        points: 0,
+        fouls_suffered: 0
+    },
+    {
+        name: 'Roma',
+        points: 0,
+        fouls_suffered: 0
+    },
+    {
+        name: 'Napoli',
+        points: 0,
+        fouls_suffered: 0
+    },
+    {
+        name: 'Juventus',
+        points: 0,
+        fouls_suffered: 0
+    },
+]
+
+console.log(teams);
