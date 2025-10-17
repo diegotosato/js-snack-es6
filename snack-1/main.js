@@ -29,3 +29,38 @@ Pseudo-Code
 
 - log di minimo
 */
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------*/
+
+
+// - creo un array
+const bycicles = [
+    {
+        name : 'Canyon',
+        peso : 48
+    },
+    {
+        name : 'Pinarello',
+        peso : 33
+    },
+    {
+        name : 'Van Rysel',
+        peso : 60
+    },
+    {
+        name : 'Bianchi',
+        peso : 55
+    },
+    {
+        name : 'Guerciotti',
+        peso : 51
+    },
+    {
+        name : 'Cannondale',
+        peso : 42
+    }
+]
+
