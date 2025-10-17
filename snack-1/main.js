@@ -123,3 +123,8 @@ for (let i = 1; i < byciclesWeights.length; i++) {
         console.log(bycicles[i]);
     }
 }
+
+//creo una variabile di appoggio e dico che è uguale all'indice zero dell'array dei pesi
+//scorro dentro l'array dei pesi partendo dall'indice uno
+//confronto se i1 è minore di i0, allora la mia variabile di appoggio diventa i1, finchè non mi rimane l'indice con il numero più piccolo
+//se il peso minore è uguale al valore della chiave di un oggetto, allora stampo sia il peso che l'oggetto
