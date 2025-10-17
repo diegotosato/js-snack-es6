@@ -22,6 +22,11 @@ PSEUDO-CODE
         - array[i].falli subiti = math random
 
 - loggo primo array e vedo se cambiano i numeri
+
+- nello stesso ciclo di prima, dichiaro una variabile per i dati del team aggiornati
+    - questa variabile è un oggetto
+        - il cui name = name originale
+        - il cui valore di falli subiti = nuovo valore random
 */
 
 
@@ -58,7 +63,14 @@ const teams = [
 
 console.log(teams);
 
+
+
 for (let i = 0; i < teams.length; i++) {
     teams[i].points = Math.floor(Math.random() * 100)
     teams[i].fouls_suffered = Math.floor(Math.random() * 100)
+
+    const teamDataUpdate = {
+        name: teams[i].name,
+        fouls_suffered: teams[i].fouls_suffered
+    }
 }
