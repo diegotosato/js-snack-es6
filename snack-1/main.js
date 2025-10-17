@@ -27,7 +27,11 @@ Pseudo-Code
                 - array supporto [i] > minimo
                 - minimo = array supporto [i]
 
-- log di minimo
+- trovo il peso minore
+
+- ciclo for
+    - scorro nell'array delle bici
+        - SE il peso minore è uguale a oggetto.peso allora stampo quell'oggetto
 */
 
 
@@ -70,6 +74,7 @@ const bycicles = [
 ]
 
 console.log(bycicles);
+// creato un array di oggetti, ognuno con chiavi nome e peso e rispettivi valori
 
 
 
@@ -89,7 +94,9 @@ for (let i = 0; i < bycicles.length; i++) {
 
     //- pusho nel array di supporto i pesi
     byciclesWeights.push(bycicleWeight)
-
 }
 
 console.log(byciclesWeights);
+//scorro dentro al array degli oggetti e pusho nel array dei pesi ogni chiave peso
+
+
