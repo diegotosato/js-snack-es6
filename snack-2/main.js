@@ -57,3 +57,8 @@ const teams = [
 ]
 
 console.log(teams);
+
+for (let i = 0; i < teams.length; i++) {
+    teams[i].points = Math.floor(Math.random() * 100)
+    teams[i].fouls_suffered = Math.floor(Math.random() * 100)
+}
