@@ -69,19 +69,42 @@ console.log(teams);
 
 
 
-const updatedTeams = []
+// const updatedTeams = []
 
 
-for (let i = 0; i < teams.length; i++) {
-    teams[i].points = Math.floor(Math.random() * 100)
-    teams[i].fouls_suffered = Math.floor(Math.random() * 100)
+// for (let i = 0; i < teams.length; i++) {
+//     teams[i].points = Math.floor(Math.random() * 100)
+//     teams[i].fouls_suffered = Math.floor(Math.random() * 100)
 
-    const teamDataUpdate = {
-        name: teams[i].name,
-        fouls_suffered: teams[i].fouls_suffered
+//     const teamDataUpdate = {
+//         name: teams[i].name,
+//         fouls_suffered: teams[i].fouls_suffered
+//     }
+
+//     updatedTeams.push(teamDataUpdate)
+// }
+
+// console.log(updatedTeams);
+
+
+function updateDatasArray(array_object) {
+    const updatedTeams = []
+
+
+    for (let i = 0; i < array_object.length; i++) {
+        array_object[i].points = Math.floor(Math.random() * 100)
+        array_object[i].fouls_suffered = Math.floor(Math.random() * 100)
+
+        const teamDataUpdate = {
+            name: array_object[i].name,
+            fouls_suffered: array_object[i].fouls_suffered
+        }
+
+        updatedTeams.push(teamDataUpdate)
     }
 
-    updatedTeams.push(teamDataUpdate)
+    return updatedTeams
 }
 
-console.log(updatedTeams);
+console.log(updateDatasArray(teams));
+
