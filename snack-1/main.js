@@ -69,7 +69,7 @@ const bycicles = [
     },
     {
         name: 'Cannondale',
-        peso: 40
+        peso: 30
     }
 ]
 
@@ -131,24 +131,22 @@ console.log(bycicles);
 
 
 
-let weight = bycicles[0].peso
+let lighterWeight = bycicles[0].peso
 
 for (let i = 0; i < bycicles.length; i++) {
 
 
 
-    const lighter = bycicles[i].peso;
+    const thisBike = bycicles[i].peso;
 
-    if (lighter < weight) {
-        weight = lighter
-        console.log(weight);
-
-        if (weight === bycicles[i].peso) {
-            console.log(bycicles[i]);
-        }
+    if (thisBike < lighterWeight) {
+        lighterWeight = thisBike
+    } else {
+        lighterWeight = lighterWeight
     }
-
-
-
+    
+    
+    
 }
+console.log(lighterWeight);
 
