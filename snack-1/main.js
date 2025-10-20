@@ -65,7 +65,7 @@ const bycicles = [
     },
     {
         name: 'Guerciotti',
-        peso: 51
+        peso: 28
     },
     {
         name: 'Cannondale',
@@ -131,22 +131,46 @@ console.log(bycicles);
 
 
 
-let lighterWeight = bycicles[0].peso
+// let lighterWeight = bycicles[0].peso
 
-for (let i = 0; i < bycicles.length; i++) {
+// for (let i = 0; i < bycicles.length; i++) {
 
 
 
-    const thisBike = bycicles[i].peso;
+//     const thisBike = bycicles[i].peso;
 
-    if (thisBike < lighterWeight) {
-        lighterWeight = thisBike
-    } else {
-        lighterWeight = lighterWeight
+//     if (thisBike < lighterWeight) {
+//         lighterWeight = thisBike
+//     } else {
+//         lighterWeight = lighterWeight
+//     }
+
+
+
+// }
+// console.log(lighterWeight);
+
+
+function findLighter(array_objects) {
+    let lighterWeight = array_objects[0].peso
+
+    for (let i = 0; i < array_objects.length; i++) {
+
+
+
+        const thisBike = array_objects[i].peso;
+
+        if (thisBike < lighterWeight) {
+            lighterWeight = thisBike
+        } else {
+            lighterWeight = lighterWeight
+        }
+
+
+
     }
-    
-    
-    
+    return lighterWeight
 }
-console.log(lighterWeight);
+
+console.log(findLighter(bycicles));
 
